@@ -1,6 +1,7 @@
-import home, shop, user, cart
+import home, shop, user, cart, about_us
 
 home.home.add_url_rule(rule = '/', view_func = home.render_home)
+about_us.about_us.add_url_rule(rule = '/about_us', view_func = about_us.render_about_us)
 cart.cart.add_url_rule(rule = '/cart', view_func = cart.render_cart)
 # cart.cart.add_url_rule(rule = '/delete_product_to_cart', view_func = cart.delete_product_to_cart, methods = ['GET','POST'])
 
