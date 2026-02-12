@@ -1,13 +1,14 @@
+body {
+  overflow-x: hidden;
+}
+
 :root{
     --sizeImageDrone: 115vh;
 }
-body{
-    overflow-x: hidden;
-}
+
 header{
     height: 100vh;
     background-color: #CDD5DD;
-
 }
 
 .ellipse{
@@ -20,12 +21,14 @@ header{
     border-radius: 50%;
     background-color: #FFFFFF;
 }
+
 .drones{
     position: absolute;
     top: 11vh;
     width: var(--sizeImageDrone);
     height: var(--sizeImageDrone);
 }
+
 .slogan{
     display: flex;
     flex-direction: column;
@@ -34,4 +37,87 @@ header{
     margin-bottom: 35vh;
     font-size: 8.24vh;
     color: #FFFFFF;
+}
+
+.ellipse-top,
+.ellipse-bottom {
+  width: 123.1vw;
+  height: 98.1vh;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50vw;
+}
+
+.ellipse-top {
+  top: 65.75vh;
+}
+
+.to-catalog {
+  position: absolute;
+  right: 5.8vw;
+  bottom: 2.4vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6vh;
+  width: 20.8vw;
+  align-items: start;
+}
+
+.to-catalog p {
+  font-weight: 400;
+  color: #0c122a;
+}
+
+.to-catalog a {
+  color: white;
+  border-radius: 1;
+  background-color: #0c122a;
+  border-radius: 11.8vh;
+  font-weight: 700;
+  padding: 2.1vh 2.8vw 2.1vh 2.8vw;
+}
+
+.center-block {
+  text-align: center;
+  padding: 20vh 0;
+}
+
+.bottomside-block {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.ellipse-bottom {
+  top: -65.75vh;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  left: 50vw;
+  transform: translateX(-50%);
+  width: 55.4vw;
+  height: 13.6vh;
+  top: 8vh;
+}
+
+.rating__element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  color: #0C122A;
+  text-align: center;
+}
+
+.rating__element h4 {
+  font-size: 5.2vh;
 }
